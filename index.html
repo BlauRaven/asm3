@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="navbar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar">
             <a href="#" class="logo"> <img class="logo" src="images/lilypad_logo.png"> </a>
             <div class="navbar-left">
                 <a href="#" class="text">Online shop</a>
                 <a href="#" class="text">About us</a>
                 <a href="#" class="text">Contact</a>
-        </div>
-        <div class="navbar-right">
-            <a href="#" class="search"> <img class="search" src="images/search_icon.svg"> </a>
-            <a href="#" class="shopping-cart"> <img class="shopping-cart" src="images/shopping_cart.png"> </a>
-        </div>
-    </div>
-
-    <div class="bg-pic">
-        <div class="slogan-wrapper">
-            <div class="slogan">
-                Planting Happiness,<br />Nurturing Nature
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="search"> <img class="search" src="images/search_icon.svg"> </a>
+                <a href="#" class="shopping-cart"> <img class="shopping-cart" src="images/shopping_cart.png"> </a>
             </div>
         </div>
-    </div>
 
-    
-</body>
+        <div class="bg-pic">
+            <div class="slogan-wrapper">
+                <div class="slogan">
+                    Planting Happiness,<br />Nurturing Nature
+                </div>
+            </div>
+        </div>
+
+        <h1 class="growing-trend">Growing Trends</h1>
+
+        <template id="product-card-template">
+            <div class="product-card">
+                <img src="" alt="Product image">
+                <div class="info-wrapper">
+                    <span class="product-name"></span>
+                    <span class="product-price"></span>
+                </div>
+            </div>
+        </template>
+
+        <div id="product-list"></div>
+        <script src="script.js"></script>
+
+        <div class="see-all-wrapper">
+            <a href="#" class="see-all">See all</a>
+        </div>
+    </body>
 </html>
