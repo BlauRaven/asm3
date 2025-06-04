@@ -7,17 +7,46 @@ body, html {
 .navbar {
     width: 1368px;
     height: 106px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
     flex-shrink: 0;
     background-color: #C5EBB4;
     color: black;
 }
 
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: right;
+    gap: 38px;
+    padding-right: 55px;
+}
+
 .logo {
     width: 169px;
     height: 75px;
-    padding-top: 15px;
     padding-left: 30px;
 }
+
+.search {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+}
+.shopping-cart {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+}
+
 .text {
     font-family: "Noto Serif";
     color: black;
@@ -25,31 +54,48 @@ body, html {
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
-.text-wrapper {
+.bg-pic {
+    position: relative;
+    width: 100%;
+    height: 438px;
+    overflow: hidden;
+}
+
+.bg-pic::before {
+    content: "";
     position: absolute;
-    width: 647px;
-    top: 29px;
-    left: 300px;
-    font-family: "Noto Serif", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 32px;
-    letter-spacing: 0;
-    line-height: normal;
-    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/heading_pic.jpg) center/cover no-repeat;
+    filter: blur(2.5px);
+    z-index: 0;
+}
+
+.slogan-wrapper {
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 158px;
+    border-radius: 30px;
+    background: rgba(27, 53, 30, 0.2);
+    background-blend-mode: color-burn;
 }
 
 .slogan {
-    width:600px;
-    height:158px;
-    color: black;
+    color: white;
     text-align: center;
-    font-family: "Rufina";
+    font-family:'Rufina', 'Playfair Display', serif ;
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
