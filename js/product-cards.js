@@ -4,14 +4,14 @@ const products = [
 ];
 
 const template = document.getElementById("product-card-template");
-const container = document.getElementById("product-list");
+const container = document.getElementById("product-list2");
 
-const cards = 5;
+const rows = 5;
+const cols = 5;
 
-for (let i = 0; i < cards; i++) {
-    for (let j = 0; j < cards; j++) {
-        const product = products[(j+i) % products.length]; // alternate between 0 and 1
-        const clone = template.content.cloneNode(true);
+for (let i = 0; i < rows * cols; i++) {
+    const product = products[i % products.length]; // cycle products
+    const clone = template.content.cloneNode(true);
 
         const link = clone.querySelector(".product-card-link");
          link.href = `product.html?id=${product.id}`;
@@ -22,4 +22,3 @@ for (let i = 0; i < cards; i++) {
         clone.querySelector(".product-price").textContent = product.price;
         container.appendChild(clone);
     }
-}

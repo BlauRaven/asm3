@@ -4,28 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Browse products</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div class="navbar">
-            <a href="#" class="logo"> <img class="logo" src="images/lilypad_logo.png"> </a>
-            <div class="navbar-left">
-                <a href="#" class="text">Online shop</a>
-                <a href="#" class="text">About us</a>
-                <a href="#" class="text">Contact</a>
-            </div>
-            <div class="navbar-right">
-                <a href="#" class="search"> <img class="search" src="images/search_icon.png"> </a>
-                <a href="#" class="shopping-cart"> <img class="shopping-cart" src="images/shopping_cart.png"> </a>
-            </div>
-        </div>
+        <div id="header-placeholder"></div>
 
         <h1 class="search-result">Search result</h1>
-        <h1 class="plants">"plants"</h1>
+        <h1 class="result-text">"plants"</h1>
 
         <template id="product-card-template">
             <a class="product-card-link" href="#">
@@ -38,8 +27,12 @@
                 </div>
             </a>
         </template>
-        
-        <div id="product-list"></div>
-        <script src="product-cards.js"></script>
+
+        <div id="product-list2"></div>
+        <div id="footer-placeholder"></div>
+
     </body>
+        <script src="js/product-cards.js"></script>
+        <script src="js/load-header.js"></script>
+        <script src="js/load-footer.js"></script>
 </html>
