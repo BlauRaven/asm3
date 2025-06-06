@@ -31,6 +31,7 @@ if (product) {
   document.querySelector(".product-img").src = product.img;
   document.querySelector(".product-img").alt = product.name;
   document.querySelector(".productpage-name").textContent = product.name;
+  document.querySelector(".productpage-name-desktop").textContent = product.name;
   document.querySelector(".product-detail").textContent = product.description;
   document.querySelector(".button-price").textContent = product.price;
 

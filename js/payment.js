@@ -99,9 +99,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (isValid) {
-            // If all validations pass, you can proceed with the payment
-            alert('Payment successful!');
-            form.reset();
+            // If all validations pass, redirect to the confirmation page
+            window.location.href = 'order-confirmation.html';
         }
     });
 
@@ -115,13 +114,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function showError(input, message) {
         const errorDiv = document.createElement('div');
         errorDiv.className = 'error-message';
-        errorDiv.style.color = 'red';
-        errorDiv.style.fontSize = '12px';
-        errorDiv.style.marginTop = '5px';
         errorDiv.textContent = message;
         
-        input.style.borderColor = 'red';
-        input.parentNode.appendChild(errorDiv);
+        input.classList.add('error-input');
+        
+        const parent = input.parentElement;
+        if (parent.classList.contains('input-row')) {
+            parent.parentElement.insertBefore(errorDiv, parent.nextSibling);
+        } else {
+            parent.insertBefore(errorDiv, input.nextSibling);
+        }
     }
 
     // Helper function to clear all error messages
@@ -129,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const errorMessages = document.querySelectorAll('.error-message');
         errorMessages.forEach(error => error.remove());
         
-        const inputs = document.querySelectorAll('input');
-        inputs.forEach(input => input.style.borderColor = '');
+        const inputs = document.querySelectorAll('.error-input');
+        inputs.forEach(input => input.classList.remove('error-input'));
     }
 });

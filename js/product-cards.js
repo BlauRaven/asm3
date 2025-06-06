@@ -6,7 +6,7 @@ const products = [
 const template = document.getElementById("product-card-template");
 const container = document.getElementById("product-list2");
 
-const rows = 5;
+const rows = 4;
 const cols = 5;
 
 for (let i = 0; i < rows * cols; i++) {
