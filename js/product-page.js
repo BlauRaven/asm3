@@ -17,7 +17,7 @@ const products = [
     id: "2",
     name: "Zayne",
     price: "$59.95",
-    img: "images/zayne.jpg",
+    img: "images/Zayne.jpg",
     description: "Zayne looks exotic but is tough as nails, thriving just about anywhere with only a modicum of care.",
     sun: "Medium",
     water: "Medium",
