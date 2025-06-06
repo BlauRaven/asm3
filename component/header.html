@@ -1,18 +1,36 @@
 <div class="navbar">
-    <a href="../index.html" class="logo">
-        <img class="logo" src="images/lilypad_logo.png">
-    </a>
-    <div class="navbar-left">
-        <a href="#" class="text">Online shop</a>
+    <!-- Mobile Left: Only visible on mobile -->
+    <div class="navbar-mobile-left mobile-only">
+        <img class="menu-img" src="images/menu-icon.png">
+    </div>
+    <!-- Logo: Always centered -->
+     <div class="mobile-only">
+        <a href="../index.html" class="logo logo-center">
+            <img class="logo-img-mobile" src="images/lilypad_logo.png" alt="Lillypad Logo">
+        </a>
+    </div>
+    <!-- Mobile Right: Only visible on mobile -->
+    <div class="navbar-mobile-right mobile-only">
+        <a href="shopping-cart.html" class="shopping-cart">
+            <img class="shopping-cart-img" src="images/shopping_cart.png" alt="Cart">
+        </a>
+    </div>
+    <!-- Desktop Nav: Only visible on desktop -->
+    <div class="navbar-left desktop-only">
+        <a href="../index.html" class="logo logo-center">
+            <img class="logo" src="images/lilypad_logo.png" alt="Lillypad Logo">
+        </a>
+        <a href="browse-products.html" class="text">Online shop</a>
         <a href="#" class="text">About us</a>
         <a href="#" class="text">Contact</a>
     </div>
-    <div class="navbar-right">
+    <div class="navbar-right desktop-only">
         <a href="#" class="search">
             <img class="search" src="images/search_icon.png">
         </a>
-        <a href="#" class="shopping-cart">
+        <a href="shopping-cart.html" class="shopping-cart">
             <img class="shopping-cart" src="images/shopping_cart.png">
         </a>
     </div>
 </div>
+<script>
