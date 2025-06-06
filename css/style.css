@@ -609,7 +609,7 @@ form button[type="submit"]:hover {
     background-color: #b3dca3;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 790px) {
     body, html {
         width: 390px;
         background-color: #EFF4EC;
@@ -1047,7 +1047,7 @@ form button[type="submit"]:hover {
 
 }
 
-@media (min-width: 431px) {
+@media (min-width: 1000px) {
     .mobile-only {
         display: none !important;
     }
