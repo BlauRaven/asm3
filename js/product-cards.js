@@ -1,6 +1,6 @@
 const products = [
   { id: "1", name: "Echeveria", price: "$29.95", img: "images/kenny_pic.jpg" },
-  { id: "2", name: "Zayne", price: "$59.95", img: "images/Zayne.jpg" },
+  { id: "2", name: "Zayne", price: "$59.95", img: "images/zayne.jpg" },
 ];
 
 const template = document.getElementById("product-card-template");
